@@ -5,9 +5,9 @@
   align-items: center;
   width: 300px;
   margin: 20px auto;
-  border: 1px solid #ccc;
+  border: 1px solid #007bff;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px #007bff;
   transition: all 0.2s ease-in-out;
 }
 

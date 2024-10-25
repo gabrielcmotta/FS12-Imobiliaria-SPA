@@ -1,0 +1,122 @@
+/* Estilização do fundo escuro (overlay) */
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Para garantir que sobreponha o conteúdo da página */
+}
+
+/* Estilização do conteúdo do modal */
+.login-modal-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Ajuste conforme necessário */
+    max-width: 400px; /* Define uma largura máxima */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out; /* Animação de entrada */
+}
+
+/* Animação de fade-in para suavizar a entrada do modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilização do botão de fechar (X) */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #007bff;
+}
+
+/* Estilização dos botões de login/cadastro */
+.login-modal-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-modal-options button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.login-modal-options button:hover {
+    background-color: #0056b3;
+}
+
+.login-modal-options button.active {
+    background-color: #0056b3;
+}
+
+.login-modal-options button:last-child {
+    margin-right: 0;
+}
+
+/* Estilização geral dos campos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
