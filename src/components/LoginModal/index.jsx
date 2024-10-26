@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../LoginModal/LoginModal.css';
+import 'boxicons';
 
 export default function LoginModal({ isOpen, onClose }) {
     const [selected, setSelected] = useState('login');
@@ -104,7 +105,7 @@ export default function LoginModal({ isOpen, onClose }) {
                         Cadastro
                     </button>
                 </div>
-                <button className="close-modal" onClick={onClose}>X</button>
+                <button className="close-modal" onClick={onClose}><box-icon name='x'></box-icon></button>
             </div>
         </div>
     );

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../CarrouselFadeIn/CarrouselFadeIn.css';
 // Assegure-se de que os caminhos estejam corretos e que os arquivos exportem como URLs, se necessário.
-import PhotoModel1 from '../../Imgs/PhotoModel.svg'; 
-import PhotoModel2 from '../../Imgs/PhotoModel.svg';
-import PhotoModel3 from '../../Imgs/PhotoModel.svg';
+import PhotoModel1 from '../../Imgs/pexels-hiroom-17240699.jpg'; 
+import PhotoModel2 from '../../Imgs/pexels-inspiredimages-133458.jpg';
+import PhotoModel3 from '../../Imgs/pexels-victor-moragriega-1390556186-29057615.jpg';
 
 const images = [
   PhotoModel1,

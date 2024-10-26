@@ -48,8 +48,12 @@
     cursor: pointer;
     color: #333;
     transition: color 0.3s ease;
-}
 
+}
+box-icon {
+    font-size: 2rem;
+    color: #333
+}
 .close-modal:hover {
     color: #007bff;
 }
